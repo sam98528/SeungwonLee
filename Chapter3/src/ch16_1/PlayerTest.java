@@ -1,4 +1,4 @@
-package ch16;
+package ch16_1;
 
 public class PlayerTest {
 

@@ -1,17 +1,16 @@
-package ch16;
+package ch16_1;
 
-public class AdvancedLevel extends PlayerLevel {
+public class BeginnerLevel extends PlayerLevel{
 
-	
 	@Override
 	protected void run() {
-		System.out.println("빨리 달립니다.");
+		System.out.println("천천히 달립니다.");
 		
 	}
 	
 	@Override
 	protected void jump() {
-			System.out.println("높이 Jump합니다");
+			System.out.println("Jump 못하지롱");
 		
 	}
 
@@ -23,8 +22,10 @@ public class AdvancedLevel extends PlayerLevel {
 
 	@Override
 	protected void showLevelMessage() {
-		System.out.println("****** 급자 레벨입니다 ******");
+		System.out.println("****** 초급자 레벨입니다 ******");
 		
 	}
+
 	
+
 }
