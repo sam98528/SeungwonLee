@@ -53,7 +53,6 @@ public class MyLinkedList {
 
 	public MyListNode removeElement(int position) {
 		MyListNode preNode = null;
-		;
 		MyListNode tempNode = head;
 
 		if (position < 0 || position > count) {
@@ -91,7 +90,13 @@ public class MyLinkedList {
 		}
 		System.out.println();
 	}
-
+	public boolean isEmpty() {
+		if (count == 0) {
+			return true;
+		}else {
+			return false;
+		}
+	}
 	public void removeAll() {
 		head = null;
 		count = 0;
