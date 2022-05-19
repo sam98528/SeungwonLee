@@ -82,7 +82,8 @@ public class MyArray {
 		} else
 			return false;
 	}
-
+	
+	
 	public int getElement(int position) {
 		return intArr[position];
 	}
