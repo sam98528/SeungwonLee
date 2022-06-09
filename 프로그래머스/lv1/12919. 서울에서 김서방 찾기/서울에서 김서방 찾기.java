@@ -11,7 +11,7 @@ class Solution {
         }
         */
         temp = Arrays.asList(seoul).indexOf("Kim");
-        answer = "김서방은 " + Integer.toString(temp) + "에 있다";
+        answer = "김서방은 " + temp + "에 있다";
         return answer;
     }
 }
