@@ -12,8 +12,7 @@ import KakaoSDKAuth
 import FirebaseCore
 import FirebaseFirestore
 import FirebaseAuth
-import GoogleSignIn
-
+import NMapsMap
 
 class MyAppDelegate: UIResponder, UIApplicationDelegate {
     
@@ -25,18 +24,15 @@ class MyAppDelegate: UIResponder, UIApplicationDelegate {
         
         
         // Firebase 초기화
-       // FirebaseApp.configure()
+        FirebaseApp.configure()
+
+        let NMFClientId = Bundle.main.infoDictionary?["NMFClientId"] ?? ""
+        NMFAuthManager.shared().clientId = (NMFClientId as! String)
+        
         
         print("Kakao API KEY : \(kakaoAppKey)")
         return true
         
-    }
-    
-    @available(iOS 9.0, *)
-    func application(_ application: UIApplication, open url: URL,
-                     options: [UIApplication.OpenURLOptionsKey: Any])
-    -> Bool {
-        return GIDSignIn.sharedInstance.handle(url)
     }
     
     

@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 56;
+	objectVersion = 54;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -31,10 +31,12 @@
 		1497558B292CBDF000B5DE1A /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = 1497558A292CBDF000B5DE1A /* FirebaseFirestore */; };
 		1497558D292CBDF000B5DE1A /* FirebaseFirestoreCombine-Community in Frameworks */ = {isa = PBXBuildFile; productRef = 1497558C292CBDF000B5DE1A /* FirebaseFirestoreCombine-Community */; };
 		1497558F292CBDF000B5DE1A /* FirebaseFirestoreSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 1497558E292CBDF000B5DE1A /* FirebaseFirestoreSwift */; };
-		14975592292CC07E00B5DE1A /* GoogleSignIn in Frameworks */ = {isa = PBXBuildFile; productRef = 14975591292CC07E00B5DE1A /* GoogleSignIn */; };
-		14975594292CC07E00B5DE1A /* GoogleSignInSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 14975593292CC07E00B5DE1A /* GoogleSignInSwift */; };
 		14975596292CC0DD00B5DE1A /* GoogleAuthVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14975595292CC0DD00B5DE1A /* GoogleAuthVM.swift */; };
 		14975598292CC47800B5DE1A /* ApplicationUtility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14975597292CC47800B5DE1A /* ApplicationUtility.swift */; };
+		149755A0292D233B00B5DE1A /* GoogleSignIn in Frameworks */ = {isa = PBXBuildFile; productRef = 1497559F292D233B00B5DE1A /* GoogleSignIn */; };
+		149755A2292D233C00B5DE1A /* GoogleSignInSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 149755A1292D233C00B5DE1A /* GoogleSignInSwift */; };
+		149757EA292D3C6F00B5DE1A /* NaverMapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 149757E9292D3C6F00B5DE1A /* NaverMapView.swift */; };
+		149757EC292D455300B5DE1A /* LocationFetcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 149757EB292D455300B5DE1A /* LocationFetcher.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -47,10 +49,14 @@
 		1496AD96292B3685000A8E2E /* Config.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Config.xcconfig; sourceTree = "<group>"; };
 		1496AD97292B3872000A8E2E /* MyAppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyAppDelegate.swift; sourceTree = "<group>"; };
 		1496AD99292B3978000A8E2E /* MySceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MySceneDelegate.swift; sourceTree = "<group>"; };
-		1496AD9B292B4666000A8E2E /* KakaoAuthVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KakaoAuthVM.swift; sourceTree = "<group>"; };
+		1496AD9B292B4666000A8E2E /* KakaoAuthVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = KakaoAuthVM.swift; path = ../KakaoAuthVM.swift; sourceTree = "<group>"; };
 		1497557A292CBCFF00B5DE1A /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
-		14975595292CC0DD00B5DE1A /* GoogleAuthVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoogleAuthVM.swift; sourceTree = "<group>"; };
+		14975595292CC0DD00B5DE1A /* GoogleAuthVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = GoogleAuthVM.swift; path = ../GoogleAuthVM.swift; sourceTree = "<group>"; };
 		14975597292CC47800B5DE1A /* ApplicationUtility.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApplicationUtility.swift; sourceTree = "<group>"; };
+		149757E9292D3C6F00B5DE1A /* NaverMapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NaverMapView.swift; sourceTree = "<group>"; };
+		149757EB292D455300B5DE1A /* LocationFetcher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationFetcher.swift; sourceTree = "<group>"; };
+		1D58E8B25AC13E093F70734D /* Pods-MyMap.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyMap.debug.xcconfig"; path = "Target Support Files/Pods-MyMap/Pods-MyMap.debug.xcconfig"; sourceTree = "<group>"; };
+		2C26B8DE18643A360B2AC49F /* Pods-MyMap.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyMap.release.xcconfig"; path = "Target Support Files/Pods-MyMap/Pods-MyMap.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,8 +73,8 @@
 				1496AD8E292B3588000A8E2E /* KakaoSDKStory in Frameworks */,
 				1497558F292CBDF000B5DE1A /* FirebaseFirestoreSwift in Frameworks */,
 				1496AD92292B3588000A8E2E /* KakaoSDKTemplate in Frameworks */,
-				14975594292CC07E00B5DE1A /* GoogleSignInSwift in Frameworks */,
-				14975592292CC07E00B5DE1A /* GoogleSignIn in Frameworks */,
+				149755A2292D233C00B5DE1A /* GoogleSignInSwift in Frameworks */,
+				149755A0292D233B00B5DE1A /* GoogleSignIn in Frameworks */,
 				14975585292CBDF000B5DE1A /* FirebaseAnalytics in Frameworks */,
 				14975587292CBDF000B5DE1A /* FirebaseAuth in Frameworks */,
 				1496AD86292B3588000A8E2E /* KakaoSDKCommon in Frameworks */,
@@ -87,6 +93,8 @@
 			children = (
 				1496AD71292B341E000A8E2E /* MyMap */,
 				1496AD70292B341E000A8E2E /* Products */,
+				270C3CCA5D580748F220E8ED /* Pods */,
+				8493319379DEAE23976538DD /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -103,16 +111,14 @@
 			children = (
 				1496AD97292B3872000A8E2E /* MyAppDelegate.swift */,
 				1496AD99292B3978000A8E2E /* MySceneDelegate.swift */,
-				1496AD9B292B4666000A8E2E /* KakaoAuthVM.swift */,
-				14975595292CC0DD00B5DE1A /* GoogleAuthVM.swift */,
+				149755A3292D2BC500B5DE1A /* Model */,
 				1496AD95292B35E3000A8E2E /* Info.plist */,
 				1496AD72292B341E000A8E2E /* MyMapApp.swift */,
-				1496AD74292B341E000A8E2E /* ContentView.swift */,
+				149755A4292D2E4000B5DE1A /* View */,
 				1496AD76292B3420000A8E2E /* Assets.xcassets */,
 				1496AD78292B3420000A8E2E /* Preview Content */,
 				1496AD96292B3685000A8E2E /* Config.xcconfig */,
 				1497557A292CBCFF00B5DE1A /* GoogleService-Info.plist */,
-				14975597292CC47800B5DE1A /* ApplicationUtility.swift */,
 			);
 			path = MyMap;
 			sourceTree = "<group>";
@@ -125,6 +131,42 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
+		149755A3292D2BC500B5DE1A /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				1496AD9B292B4666000A8E2E /* KakaoAuthVM.swift */,
+				14975595292CC0DD00B5DE1A /* GoogleAuthVM.swift */,
+				14975597292CC47800B5DE1A /* ApplicationUtility.swift */,
+				149757EB292D455300B5DE1A /* LocationFetcher.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		149755A4292D2E4000B5DE1A /* View */ = {
+			isa = PBXGroup;
+			children = (
+				1496AD74292B341E000A8E2E /* ContentView.swift */,
+				149757E9292D3C6F00B5DE1A /* NaverMapView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		270C3CCA5D580748F220E8ED /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				1D58E8B25AC13E093F70734D /* Pods-MyMap.debug.xcconfig */,
+				2C26B8DE18643A360B2AC49F /* Pods-MyMap.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		8493319379DEAE23976538DD /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -132,9 +174,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 1496AD7D292B3420000A8E2E /* Build configuration list for PBXNativeTarget "MyMap" */;
 			buildPhases = (
+				55748094856BE0E319A0CF43 /* [CP] Check Pods Manifest.lock */,
 				1496AD6B292B341E000A8E2E /* Sources */,
 				1496AD6C292B341E000A8E2E /* Frameworks */,
 				1496AD6D292B341E000A8E2E /* Resources */,
+				EF77D446C197A563DCEDADB6 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -158,8 +202,8 @@
 				1497558A292CBDF000B5DE1A /* FirebaseFirestore */,
 				1497558C292CBDF000B5DE1A /* FirebaseFirestoreCombine-Community */,
 				1497558E292CBDF000B5DE1A /* FirebaseFirestoreSwift */,
-				14975591292CC07E00B5DE1A /* GoogleSignIn */,
-				14975593292CC07E00B5DE1A /* GoogleSignInSwift */,
+				1497559F292D233B00B5DE1A /* GoogleSignIn */,
+				149755A1292D233C00B5DE1A /* GoogleSignInSwift */,
 			);
 			productName = MyMap;
 			productReference = 1496AD6F292B341E000A8E2E /* MyMap.app */;
@@ -181,7 +225,7 @@
 				};
 			};
 			buildConfigurationList = 1496AD6A292B341E000A8E2E /* Build configuration list for PBXProject "MyMap" */;
-			compatibilityVersion = "Xcode 14.0";
+			compatibilityVersion = "Xcode 12.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -192,7 +236,7 @@
 			packageReferences = (
 				1496AD80292B3588000A8E2E /* XCRemoteSwiftPackageReference "kakao-ios-sdk" */,
 				14975583292CBDF000B5DE1A /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
-				14975590292CC07E00B5DE1A /* XCRemoteSwiftPackageReference "GoogleSignIn-iOS" */,
+				1497559E292D233B00B5DE1A /* XCRemoteSwiftPackageReference "GoogleSignIn-iOS" */,
 			);
 			productRefGroup = 1496AD70292B341E000A8E2E /* Products */;
 			projectDirPath = "";
@@ -216,6 +260,48 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		55748094856BE0E319A0CF43 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MyMap-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EF77D446C197A563DCEDADB6 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MyMap/Pods-MyMap-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MyMap/Pods-MyMap-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-MyMap/Pods-MyMap-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		1496AD6B292B341E000A8E2E /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -226,8 +312,10 @@
 				1496AD75292B341E000A8E2E /* ContentView.swift in Sources */,
 				14975598292CC47800B5DE1A /* ApplicationUtility.swift in Sources */,
 				1496AD98292B3872000A8E2E /* MyAppDelegate.swift in Sources */,
+				149757EA292D3C6F00B5DE1A /* NaverMapView.swift in Sources */,
 				1496AD73292B341E000A8E2E /* MyMapApp.swift in Sources */,
 				1496AD9A292B3978000A8E2E /* MySceneDelegate.swift in Sources */,
+				149757EC292D455300B5DE1A /* LocationFetcher.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -352,7 +440,7 @@
 		};
 		1496AD7E292B3420000A8E2E /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 1496AD96292B3685000A8E2E /* Config.xcconfig */;
+			baseConfigurationReference = 1D58E8B25AC13E093F70734D /* Pods-MyMap.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -368,6 +456,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -383,7 +472,7 @@
 		};
 		1496AD7F292B3420000A8E2E /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 1496AD96292B3685000A8E2E /* Config.xcconfig */;
+			baseConfigurationReference = 2C26B8DE18643A360B2AC49F /* Pods-MyMap.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -399,6 +488,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -448,16 +538,16 @@
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
 			requirement = {
-				branch = master;
-				kind = branch;
+				kind = upToNextMajorVersion;
+				minimumVersion = 10.2.0;
 			};
 		};
-		14975590292CC07E00B5DE1A /* XCRemoteSwiftPackageReference "GoogleSignIn-iOS" */ = {
+		1497559E292D233B00B5DE1A /* XCRemoteSwiftPackageReference "GoogleSignIn-iOS" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/google/GoogleSignIn-iOS";
 			requirement = {
-				branch = main;
-				kind = branch;
+				kind = upToNextMajorVersion;
+				minimumVersion = 6.2.4;
 			};
 		};
 /* End XCRemoteSwiftPackageReference section */
@@ -543,14 +633,14 @@
 			package = 14975583292CBDF000B5DE1A /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
 			productName = FirebaseFirestoreSwift;
 		};
-		14975591292CC07E00B5DE1A /* GoogleSignIn */ = {
+		1497559F292D233B00B5DE1A /* GoogleSignIn */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 14975590292CC07E00B5DE1A /* XCRemoteSwiftPackageReference "GoogleSignIn-iOS" */;
+			package = 1497559E292D233B00B5DE1A /* XCRemoteSwiftPackageReference "GoogleSignIn-iOS" */;
 			productName = GoogleSignIn;
 		};
-		14975593292CC07E00B5DE1A /* GoogleSignInSwift */ = {
+		149755A1292D233C00B5DE1A /* GoogleSignInSwift */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 14975590292CC07E00B5DE1A /* XCRemoteSwiftPackageReference "GoogleSignIn-iOS" */;
+			package = 1497559E292D233B00B5DE1A /* XCRemoteSwiftPackageReference "GoogleSignIn-iOS" */;
 			productName = GoogleSignInSwift;
 		};
 /* End XCSwiftPackageProductDependency section */
