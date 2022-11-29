@@ -41,9 +41,14 @@
 	<string>${GOOGLE_REVERSED_CLIENT_ID}</string>
 	<key>NMFClientId</key>
 	<string>${NMFClientId}</string>
-    <key>NSLocationUsageDescription</key>
-    <string>Your description here</string>
-    <key>NSLocationWhenInUseUsageDescription</key>
-    <string>Your description here</string>
+	<key>NSLocationUsageDescription</key>
+	<string>Your description here</string>
+	<key>NSLocationWhenInUseUsageDescription</key>
+	<string>Your description here</string>
+	<key>UIAppFonts</key>
+	<array>
+		<string>BMDOHYEON_otf.otf</string>
+		<string>CollegiateFLF.ttf</string>
+	</array>
 </dict>
 </plist>

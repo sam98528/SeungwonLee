@@ -7,6 +7,8 @@
 
 import SwiftUI
 import GoogleSignInSwift
+import AuthenticationServices
+
 
 struct ContentView: View {
     
@@ -17,44 +19,87 @@ struct ContentView: View {
         return isLoggedIn ? "LOG IN" : "LOG OUT"
     }
     
+    
+    init(){
+        for family in UIFont.familyNames {
+             print(family)
+
+             for names in UIFont.fontNames(forFamilyName: family){
+             print("== \(names)")
+             }
+        }
+    }
+    
     var body: some View {
         if (kakaoAuthVM.isLoggedIn || googleAuthVM.isLoggedIn){
             NaverMapView()
         }else{
-            VStack(spacing: 20) {
-                HStack {
-                    Text("KAKAO \(loginStatusInfo(kakaoAuthVM.isLoggedIn))")
-                        .padding()
-                        .background(.yellow)
-                        .font(.headline)
-                    .bold()
-                    
-                    Text("GOOGLE \(loginStatusInfo(googleAuthVM.isLoggedIn))")
-                        .padding()
-                        .background(.blue)
-                        .font(.headline)
-                        .bold()
+            ZStack{
+                Image("background")
+                    .resizable()
+                    .scaledToFill()
+                    .frame(width: 100, alignment: .center)
+                    .ignoresSafeArea()
+                VStack(spacing: 20) {
+                    Spacer()
+                    Text("MYMAP")
+                        .font(Font.custom("CollegiateFLF", size: 80))
+                        .fontWeight(.bold)
                         .foregroundColor(.white)
-                }
+                    
+                        
+                    Spacer()
+                    Spacer()
+//                    HStack {
+//                        Text("KAKAO \(loginStatusInfo(kakaoAuthVM.isLoggedIn))")
+//                            .padding()
+//                            .background(.yellow)
+//                            .font(.headline)
+//                        .bold()
+//
+//                        Text("GOOGLE \(loginStatusInfo(googleAuthVM.isLoggedIn))")
+//                            .padding()
+//                            .background(.blue)
+//                            .font(.headline)
+//                            .bold()
+//                            .foregroundColor(.white)
+//                    }
 
-                Button( action: {
-                    kakaoAuthVM.handleKakaoLogin()
-                }) {
-                    Image("kakao_login_button")
-                        .renderingMode(.original)
-                }
-            
-                Button(action: {
-                    googleAuthVM.handleGoogleLogin()
-                }){
-                    Image("google_login_button")
-                }
-
+                    Button( action: {
+                        print("SOMETHING")
+                    }) {
+                        Image("apple_login_button")
+                            
+                    }
+                    
+                    Button( action: {
+                        kakaoAuthVM.handleKakaoLogin()
+                    }) {
+                        Image("kakao_login_button")
+                            .renderingMode(.original)
+                            .resizable()
+                            .frame(width: 180,height: 45)
+                    }
+                    Button(action: {
+                        googleAuthVM.handleGoogleLogin()
+                    }){
+                        Image("google_login_button")
+                            .resizable()
+                            .frame(width: 180,height: 45)
+                    }
+                    Button( action: {
+                        print("SOMETHING")
+                    }) {
+                        Image("facebook_login_button")
+                            .resizable()
+                            .frame(width: 180,height: 45)
+                            
+                    }
+                    Spacer()
                 
-                Button("카카오 로그아웃", action: {
-                    kakaoAuthVM.kakaoLogout()
-                })
+                }
             }
+            
         }
             
             

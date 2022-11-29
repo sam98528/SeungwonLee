@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		145EB9A12934A7D7006F121D /* BMDOHYEON_otf.otf in Resources */ = {isa = PBXBuildFile; fileRef = 145EB9A02934A7D7006F121D /* BMDOHYEON_otf.otf */; };
+		145EB9A32934A8DD006F121D /* CollegiateFLF.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 145EB9A22934A8DD006F121D /* CollegiateFLF.ttf */; };
 		1496AD73292B341E000A8E2E /* MyMapApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1496AD72292B341E000A8E2E /* MyMapApp.swift */; };
 		1496AD75292B341E000A8E2E /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1496AD74292B341E000A8E2E /* ContentView.swift */; };
 		1496AD77292B3420000A8E2E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1496AD76292B3420000A8E2E /* Assets.xcassets */; };
@@ -40,6 +42,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		145EB9A02934A7D7006F121D /* BMDOHYEON_otf.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = BMDOHYEON_otf.otf; sourceTree = "<group>"; };
+		145EB9A22934A8DD006F121D /* CollegiateFLF.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = CollegiateFLF.ttf; sourceTree = "<group>"; };
 		1496AD6F292B341E000A8E2E /* MyMap.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyMap.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1496AD72292B341E000A8E2E /* MyMapApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyMapApp.swift; sourceTree = "<group>"; };
 		1496AD74292B341E000A8E2E /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -88,6 +92,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		145EB99F2934A7BB006F121D /* fonts */ = {
+			isa = PBXGroup;
+			children = (
+				145EB9A22934A8DD006F121D /* CollegiateFLF.ttf */,
+				145EB9A02934A7D7006F121D /* BMDOHYEON_otf.otf */,
+			);
+			path = fonts;
+			sourceTree = "<group>";
+		};
 		1496AD66292B341E000A8E2E = {
 			isa = PBXGroup;
 			children = (
@@ -109,6 +122,7 @@
 		1496AD71292B341E000A8E2E /* MyMap */ = {
 			isa = PBXGroup;
 			children = (
+				145EB99F2934A7BB006F121D /* fonts */,
 				1496AD97292B3872000A8E2E /* MyAppDelegate.swift */,
 				1496AD99292B3978000A8E2E /* MySceneDelegate.swift */,
 				149755A3292D2BC500B5DE1A /* Model */,
@@ -253,6 +267,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				1496AD7A292B3420000A8E2E /* Preview Assets.xcassets in Resources */,
+				145EB9A32934A8DD006F121D /* CollegiateFLF.ttf in Resources */,
+				145EB9A12934A7D7006F121D /* BMDOHYEON_otf.otf in Resources */,
 				1496AD77292B3420000A8E2E /* Assets.xcassets in Resources */,
 				1497557B292CBCFF00B5DE1A /* GoogleService-Info.plist in Resources */,
 			);
