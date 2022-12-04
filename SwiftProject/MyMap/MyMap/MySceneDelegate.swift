@@ -8,7 +8,7 @@
 import Foundation
 import UIKit
 import KakaoSDKAuth
-
+import FacebookCore
 
 class MySceneDelegate: UIResponder, UIWindowSceneDelegate {
     
@@ -18,5 +18,24 @@ class MySceneDelegate: UIResponder, UIWindowSceneDelegate {
                 _ = AuthController.handleOpenUrl(url: url)
             }
         }
+        
+        
+        guard let url = URLContexts.first?.url else {
+            return
+        }
+
+        ApplicationDelegate.shared.application(
+            UIApplication.shared,
+            open: url,
+            sourceApplication: nil,
+            annotation: [UIApplication.OpenURLOptionsKey.annotation]
+        )
+        
+        
     }
+
+
 }
+
+
+// Add this to the header of your file, e.g. in ViewController.swift

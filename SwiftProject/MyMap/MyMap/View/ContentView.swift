@@ -8,12 +8,14 @@
 import SwiftUI
 import GoogleSignInSwift
 import AuthenticationServices
-
+import FacebookLogin
 
 struct ContentView: View {
     
     @StateObject var kakaoAuthVM : KakaoAuthVM = KakaoAuthVM()
     @StateObject var googleAuthVM : GoogleAuthVM = GoogleAuthVM()
+//    @ObservedObject var fbmanager = FacebookLoginManager()
+    
     
     let loginStatusInfo : (Bool) -> String = { isLoggedIn in
         return isLoggedIn ? "LOG IN" : "LOG OUT"
@@ -30,10 +32,12 @@ struct ContentView: View {
         }
     }
     
+    
     var body: some View {
         if (kakaoAuthVM.isLoggedIn || googleAuthVM.isLoggedIn){
             NaverMapView()
         }else{
+            
             ZStack{
                 Image("background")
                     .resizable()
@@ -50,23 +54,8 @@ struct ContentView: View {
                         
                     Spacer()
                     Spacer()
-//                    HStack {
-//                        Text("KAKAO \(loginStatusInfo(kakaoAuthVM.isLoggedIn))")
-//                            .padding()
-//                            .background(.yellow)
-//                            .font(.headline)
-//                        .bold()
-//
-//                        Text("GOOGLE \(loginStatusInfo(googleAuthVM.isLoggedIn))")
-//                            .padding()
-//                            .background(.blue)
-//                            .font(.headline)
-//                            .bold()
-//                            .foregroundColor(.white)
-//                    }
-
                     Button( action: {
-                        print("SOMETHING")
+                        
                     }) {
                         Image("apple_login_button")
                             
@@ -88,7 +77,7 @@ struct ContentView: View {
                             .frame(width: 180,height: 45)
                     }
                     Button( action: {
-                        print("SOMETHING")
+                         //fbmanager.facebookLogin()
                     }) {
                         Image("facebook_login_button")
                             .resizable()

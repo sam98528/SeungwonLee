@@ -7,8 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		14269BBC293CCD0600750FD6 /* FacebookLoginManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14269BBB293CCD0600750FD6 /* FacebookLoginManager.swift */; };
 		145EB9A12934A7D7006F121D /* BMDOHYEON_otf.otf in Resources */ = {isa = PBXBuildFile; fileRef = 145EB9A02934A7D7006F121D /* BMDOHYEON_otf.otf */; };
 		145EB9A32934A8DD006F121D /* CollegiateFLF.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 145EB9A22934A8DD006F121D /* CollegiateFLF.ttf */; };
+		1492341E293CCED700700CCA /* FacebookCore in Frameworks */ = {isa = PBXBuildFile; productRef = 1492341D293CCED700700CCA /* FacebookCore */; };
+		14923420293CCED700700CCA /* FacebookLogin in Frameworks */ = {isa = PBXBuildFile; productRef = 1492341F293CCED700700CCA /* FacebookLogin */; };
 		1496AD73292B341E000A8E2E /* MyMapApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1496AD72292B341E000A8E2E /* MyMapApp.swift */; };
 		1496AD75292B341E000A8E2E /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1496AD74292B341E000A8E2E /* ContentView.swift */; };
 		1496AD77292B3420000A8E2E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1496AD76292B3420000A8E2E /* Assets.xcassets */; };
@@ -39,9 +42,11 @@
 		149755A2292D233C00B5DE1A /* GoogleSignInSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 149755A1292D233C00B5DE1A /* GoogleSignInSwift */; };
 		149757EA292D3C6F00B5DE1A /* NaverMapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 149757E9292D3C6F00B5DE1A /* NaverMapView.swift */; };
 		149757EC292D455300B5DE1A /* LocationFetcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 149757EB292D455300B5DE1A /* LocationFetcher.swift */; };
+		36234EF7E610AB248F5537A6 /* Pods_MyMap.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9FE2982702B8B82707B27821 /* Pods_MyMap.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		14269BBB293CCD0600750FD6 /* FacebookLoginManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FacebookLoginManager.swift; sourceTree = "<group>"; };
 		145EB9A02934A7D7006F121D /* BMDOHYEON_otf.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = BMDOHYEON_otf.otf; sourceTree = "<group>"; };
 		145EB9A22934A8DD006F121D /* CollegiateFLF.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = CollegiateFLF.ttf; sourceTree = "<group>"; };
 		1496AD6F292B341E000A8E2E /* MyMap.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyMap.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -61,6 +66,7 @@
 		149757EB292D455300B5DE1A /* LocationFetcher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationFetcher.swift; sourceTree = "<group>"; };
 		1D58E8B25AC13E093F70734D /* Pods-MyMap.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyMap.debug.xcconfig"; path = "Target Support Files/Pods-MyMap/Pods-MyMap.debug.xcconfig"; sourceTree = "<group>"; };
 		2C26B8DE18643A360B2AC49F /* Pods-MyMap.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyMap.release.xcconfig"; path = "Target Support Files/Pods-MyMap/Pods-MyMap.release.xcconfig"; sourceTree = "<group>"; };
+		9FE2982702B8B82707B27821 /* Pods_MyMap.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MyMap.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,12 +79,14 @@
 				1496AD88292B3588000A8E2E /* KakaoSDKCommonCore in Frameworks */,
 				1497558D292CBDF000B5DE1A /* FirebaseFirestoreCombine-Community in Frameworks */,
 				1496AD8A292B3588000A8E2E /* KakaoSDKNavi in Frameworks */,
+				14923420293CCED700700CCA /* FacebookLogin in Frameworks */,
 				14975589292CBDF000B5DE1A /* FirebaseAuthCombine-Community in Frameworks */,
 				1496AD8E292B3588000A8E2E /* KakaoSDKStory in Frameworks */,
 				1497558F292CBDF000B5DE1A /* FirebaseFirestoreSwift in Frameworks */,
 				1496AD92292B3588000A8E2E /* KakaoSDKTemplate in Frameworks */,
 				149755A2292D233C00B5DE1A /* GoogleSignInSwift in Frameworks */,
 				149755A0292D233B00B5DE1A /* GoogleSignIn in Frameworks */,
+				1492341E293CCED700700CCA /* FacebookCore in Frameworks */,
 				14975585292CBDF000B5DE1A /* FirebaseAnalytics in Frameworks */,
 				14975587292CBDF000B5DE1A /* FirebaseAuth in Frameworks */,
 				1496AD86292B3588000A8E2E /* KakaoSDKCommon in Frameworks */,
@@ -86,6 +94,7 @@
 				1496AD94292B3588000A8E2E /* KakaoSDKUser in Frameworks */,
 				1496AD8C292B3588000A8E2E /* KakaoSDKShare in Frameworks */,
 				1497558B292CBDF000B5DE1A /* FirebaseFirestore in Frameworks */,
+				36234EF7E610AB248F5537A6 /* Pods_MyMap.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -152,6 +161,7 @@
 				14975595292CC0DD00B5DE1A /* GoogleAuthVM.swift */,
 				14975597292CC47800B5DE1A /* ApplicationUtility.swift */,
 				149757EB292D455300B5DE1A /* LocationFetcher.swift */,
+				14269BBB293CCD0600750FD6 /* FacebookLoginManager.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -177,6 +187,7 @@
 		8493319379DEAE23976538DD /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				9FE2982702B8B82707B27821 /* Pods_MyMap.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -218,6 +229,8 @@
 				1497558E292CBDF000B5DE1A /* FirebaseFirestoreSwift */,
 				1497559F292D233B00B5DE1A /* GoogleSignIn */,
 				149755A1292D233C00B5DE1A /* GoogleSignInSwift */,
+				1492341D293CCED700700CCA /* FacebookCore */,
+				1492341F293CCED700700CCA /* FacebookLogin */,
 			);
 			productName = MyMap;
 			productReference = 1496AD6F292B341E000A8E2E /* MyMap.app */;
@@ -251,6 +264,7 @@
 				1496AD80292B3588000A8E2E /* XCRemoteSwiftPackageReference "kakao-ios-sdk" */,
 				14975583292CBDF000B5DE1A /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
 				1497559E292D233B00B5DE1A /* XCRemoteSwiftPackageReference "GoogleSignIn-iOS" */,
+				1492341C293CCED700700CCA /* XCRemoteSwiftPackageReference "facebook-ios-sdk" */,
 			);
 			productRefGroup = 1496AD70292B341E000A8E2E /* Products */;
 			projectDirPath = "";
@@ -332,6 +346,7 @@
 				1496AD73292B341E000A8E2E /* MyMapApp.swift in Sources */,
 				1496AD9A292B3978000A8E2E /* MySceneDelegate.swift in Sources */,
 				149757EC292D455300B5DE1A /* LocationFetcher.swift in Sources */,
+				14269BBC293CCD0600750FD6 /* FacebookLoginManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -460,6 +475,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"MyMap/Preview Content\"";
@@ -480,6 +496,7 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.SamLee.MyMap;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -492,6 +509,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"MyMap/Preview Content\"";
@@ -512,6 +530,7 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.SamLee.MyMap;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -542,6 +561,14 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
+		1492341C293CCED700700CCA /* XCRemoteSwiftPackageReference "facebook-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/facebook/facebook-ios-sdk.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 15.1.0;
+			};
+		};
 		1496AD80292B3588000A8E2E /* XCRemoteSwiftPackageReference "kakao-ios-sdk" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/kakao/kakao-ios-sdk";
@@ -569,6 +596,16 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		1492341D293CCED700700CCA /* FacebookCore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 1492341C293CCED700700CCA /* XCRemoteSwiftPackageReference "facebook-ios-sdk" */;
+			productName = FacebookCore;
+		};
+		1492341F293CCED700700CCA /* FacebookLogin */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 1492341C293CCED700700CCA /* XCRemoteSwiftPackageReference "facebook-ios-sdk" */;
+			productName = FacebookLogin;
+		};
 		1496AD81292B3588000A8E2E /* KakaoSDK */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = 1496AD80292B3588000A8E2E /* XCRemoteSwiftPackageReference "kakao-ios-sdk" */;

@@ -17,6 +17,7 @@ struct NaverMapView: View {
         self.locationFetcher.requestAuthorisation()
         
     }
+    
     var body: some View {
         ZStack{
             UIMapView()
@@ -35,6 +36,7 @@ struct UIMapView: UIViewRepresentable {
         view.mapView.zoomLevel = 17
         view.showZoomControls = true
         view.showLocationButton = true
+        view.mapView.mapType = .hybrid
         return view
     }
     
