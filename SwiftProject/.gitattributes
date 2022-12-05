@@ -1,0 +1,9 @@
+MyMap/Pods/Headers filter=lfs diff=lfs merge=lfs -text
+MyMap/Pods/Local[[:space:]]Podspecs filter=lfs diff=lfs merge=lfs -text
+MyMap/Pods/Manifest.lock filter=lfs diff=lfs merge=lfs -text
+MyMap/Pods/NMapsMap filter=lfs diff=lfs merge=lfs -text
+MyMap/Pods/Pods.xcodeproj filter=lfs diff=lfs merge=lfs -text
+MyMap/Pods/Target[[:space:]]Support[[:space:]]Files filter=lfs diff=lfs merge=lfs -text
+MyMap/Pods/** filter=lfs diff=lfs merge=lfs -text
+MyMap/Pods/* filter=lfs diff=lfs merge=lfs -text
+MyMap/Pods/**/* filter=lfs diff=lfs merge=lfs -text
